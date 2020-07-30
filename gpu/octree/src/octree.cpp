@@ -46,7 +46,6 @@
 #include<cassert>
 
 using namespace pcl::device;
-using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////////////
 //////////////// Octree Host Interface implementation ////////////////////////////////
@@ -78,7 +77,6 @@ pcl::gpu::Octree::~Octree() { clear(); }
 
 void pcl::gpu::Octree::clear()
 {
-    if (impl)
         delete static_cast<OctreeImpl*>(impl);
 }
 
